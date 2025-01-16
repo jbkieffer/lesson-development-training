@@ -2,7 +2,7 @@
 title: "Lesson Trial Runs"
 ---
 
-[Teaching a lesson for the first time is an important intermediate step in the lesson development process](../episodes/17-operations.md).
+[Teaching a lesson for the first time is an important intermediate step in the lesson development process](episodes/operations.md).
 During the break between the first and second parts of this training,
 we ask trainees to teach part of the lesson they have been designing to a real audience.
 The purpose of this task is to gather feedback at an early stage of the development process,
@@ -31,13 +31,17 @@ you should try to complete these and share them with your learners before the tr
 ### For groups of collaborators
 
 During the training, you should have been working on consecutive episodes in your lesson.
-Use the trail run as an opportunity for you to test the lesson content together,
+Ideally, use the trail run as an opportunity for you to test the lesson content together,
 with each trainee teaching the episode they have been working on during the training 
 in a single trial run event.
 This will give you an opportunity to observe each other teaching,
 to help each other gather feedback and information to help improve the lesson (see below),
 and to identify any gaps or overlaps that become apparent when moving from one
 episode to the next.
+
+If you cannot all teach an episode, make sure that every collaborator can take an active role
+in your Trial Run, for example by make those who will not teach responsible for taking 
+[notes on timings, questions asked by learners, technical difficulties, etc](operations.md#pilot-workshops).
 
 ### For Lesson Developers working alone
 
@@ -65,7 +69,7 @@ please discuss it with your trainers and/or send an email to
 - What parts of the lesson appeared to be confusing for learners?
 
 **At the end of the trial run**, make sure to capture some feedback from the learners.
-You can use the methods described in [Preparing to teach](../episodes/18-preparing.md) to
+You can use the methods described in [Preparing to teach](episodes/preparing.md) to
 gather feedback, e.g.
 
 - Minute cards

@@ -1,19 +1,13 @@
 ---
-title: Reflecting on trial runs
+title: Reflecting on Trial Runs
 teaching: 10
 exercises: 45
 start: yes
 ---
 
-Welcome back!
-In this section of the training,
-we will learn more about the skills and tools you can use to become
-an effective collaborator on an open source lesson.
-Before moving on to cover that,
-we will spend some time reflecting on and discussing the experience of
-teaching new lesson material for the first time.
-
 ::::::::::::::::::::::::::::::::::::::: objectives
+
+After completing this episode, participants should be able to...
 
 - Reflect on the experience of teaching part of a lesson for the first time.
 - Identify changes and improvements that can be made as a result of trialling lesson material.
@@ -25,6 +19,48 @@ teaching new lesson material for the first time.
 - What did I learn when I taught my lesson?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Welcome back!
+
+::::::::::::::::::::: instructor 
+
+### Notes About Teaching This Episode
+
+This episode picks-up after a long break in training for learners, you may need to remind 
+them of the following expectations as part of training.
+
+- The [Carpentries Code of Conduct][coc]
+- How to get in the queue to participate - hand-raising, typing in chat, etc.
+- Microphones muted when you aren't speaking (if virtual)
+- Any other expectations for interaction
+
+Most of the episode is facilitated discussion. 
+You may spend a lot of time in the exercise that has them discuss the trial runs.
+You can especially anticipate it taking more time when training more lesson teams because they each need time to debrief and discuss with the whole group. 
+(See Trainer Note before the Trial Run Discussion exercise below for further guidance.)
+Don't panic if this happens!
+It has historically been easier for Trainers to fit all of the content of this second part of the training into the time available, so you can probably allow yourself some extra time if you need it.
+
+::::::::::::::::::::::::::::::::
+
+
+![
+In this episode, we will discuss the final step of the iterative lesson design process:
+how you can use the notes, information, and feedback you collected when trialling your lesson
+to identify ways that the design and content could be improved.
+](./fig/cldt-step-5.svg){
+alt="An overview of the iterative process of lesson design and development, 
+adapted from Nicholls' five phases,
+with step 5, 'Evaluate curriculum' highlighted."
+width="67%"
+}
+
+In part 2 of the training,
+we will learn more about the skills and tools you can use to become
+an effective collaborator on an open source lesson.
+Before moving on to cover that,
+we will spend some time reflecting on and discussing the experience of
+teaching new lesson material for the first time.
 
 ::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -42,6 +78,30 @@ We will use this session to reflect on that experience,
 and take some steps to ensure that the feedback and notes you gathered during
 the trial run are used to improve the quality of your lesson.
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+## Discussion format
+
+For online trainings, Trainers have found it beneficial to give participants 
+the first 5 minutes together in a breakout room,
+to re-familiarise themselves with the notes from their Trial Runs 
+and discuss what they are going to report out to the rest of the group.
+
+In trainings with a larger cohort of participants,
+try asking groups to assign a reporter who will be responsible for summarising their experience
+and answering the discussion questions on behalf of their collaborators.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::: instructor
+
+### Scaling this exercise to larger numbers of lesson teams
+This exercise can take a long time when you have a lot of lesson teams in your training, but it is important to give every group the chance to reflect on their trial run. 
+You may need to facilitate it differently if time becomes an issue:
+for example, you could paste the prompts into the CodiMD and ask all groups to write their answers, before summarising responses, identifying trends, and calling on particular trainees to share more about their individual responses.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::  discussion
 
 ## Discussion: trial runs (35 minutes)
@@ -57,7 +117,7 @@ Try to answer some or all of the following questions:
 - How did the audience perceive the difficulty level of the material?
 - What will you do differently next time?
 - What will you change in the material you taught?
-- What will you change in the way you collect feedback in future pilots?  
+- What will you change in the way you collect feedback in future pilots?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -68,9 +128,9 @@ Moving forward from your first pilot, the next steps to consider are:
   - would adding a diagram help explain or curate things better?
   - is there too much content for one episode, and do you need to split it into smaller teaching units?
   - do you need to re-organise and move some content around to improve the flow and narrative?
-  - are there enough exercises and practical work? 
+  - are there enough exercises and practical work?
   - do you need to realign your lesson objectives and key messages?
-- Decide if for some of the feedback you will not take action. Remember, you do not need to respond to every piece of feedback you receive. For example, it is easy to fall down the rabbit hole of adding extra material just because someone suggested it may be a useful thing - sometimes, adding a link or a callout to extra reading is sufficient. You need to be able to draw a line under any extra modification suggestions to keep you in scope and on schedule. 
+- Decide if for some of the feedback you will not take action. Remember, you do not need to respond to every piece of feedback you receive. For example, it is easy to fall down the rabbit hole of adding extra material just because someone suggested it may be a useful thing - sometimes, adding a link or a spoiler pointing to extra reading is sufficient. You need to be able to draw a line under any extra modification suggestions to keep you in scope and on schedule.
 - Schedule follow-up co-working sessions with your team to carry on working on fixing issues and adding new content to maintain the momentum.
 - Add/Update your lessons' Instructor Notes based on what you learned and to help other instructors who will teach your lesson in the future.
 - Think about the timeline for your next pilot(s), even provisionally, to help you set milestones and targets to work towards.
@@ -84,5 +144,6 @@ Designing and developing quality lessons is hard - there are many pieces of a pu
 - Identify changes and improvements you want to make as a result of trialling your lesson and schedule co-working sessions to work on these tasks.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 

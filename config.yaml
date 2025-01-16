@@ -12,9 +12,15 @@ carpentry: "cp"
 # Overall title for pages.
 title: "Collaborative Lesson Development Training"
 
+# Date the lesson was created (YYYY-MM-DD, this is empty by default)
+created: 2022-01-18
+
+# Comma-separated list of keywords for the lesson
+keywords: 'carpentries, curriculum-development, backward-design, collaboration-skills'
+
 # Life cycle stage of the lesson
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: alpha
+life_cycle: stable
 
 # License of the lesson
 license: CC-BY 4.0
@@ -44,12 +50,30 @@ contact: team@carpentries.org
 
 # Order of episodes in your lesson
 episodes:
+- introduction.md
+- lesson-design.md
+- audience.md
+- objectives.md
+- narrative.md
+- episodes.md
+- formative-assessment.md
+- explanation.md
+- infrastructure.md
+- lesson-content.md
+- operations.md
+- preparing.md
+- wrap-up1.md
+- reflecting.md
+- collaborating-team.md
+- collaborating-newcomers.md
+- project-management.md
+- wrap-up2.md
 
 # Information for Learners
 learners:
-- setup.md
 - pilot-description.md
 - markdown-github-primer.md
+- misconceptions-mcqs.md
 - trial-runs.md
 - reference.md
 
@@ -59,3 +83,4 @@ instructors:
 # Learner Profiles
 profiles:
 
+analytics: carpentries

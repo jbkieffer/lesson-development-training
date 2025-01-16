@@ -3,7 +3,10 @@ site: sandpaper::sandpaper_site
 ---
 
 
-![Welcome to The Carpentries Collaborative Lesson Development Training](episodes/fig/CLDT-hex-sticker.png){alt='The Carpentries Collaborative Lesson Development Training'}
+![Welcome to The Carpentries Collaborative Lesson Development Training!
+](episodes/fig/CLDT-hex-sticker.png){
+alt='The Carpentries Collaborative Lesson Development Training'
+style='padding: 2%'}
 
 This is a training curriculum teaching good practices in lesson design and development,
 and open source collaboration skills, using [The Carpentries Workbench][workbench]. 
@@ -49,7 +52,7 @@ Before joining Collaborative Lesson Development Training, participants should be
 - write formatted text - bold and italic, headings, links, bullet point and numbered lists - with Markdown.
 - log into GitHub.com and create and edit files using the GitHub web interface.
 
-(See [A Primer on Markdown and GitHub](learners/markdown_github_primer.md) for resources to help learn these skills.
+See [A Primer on Markdown and GitHub](learners/markdown-github-primer.md) for resources to help learn these skills.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
