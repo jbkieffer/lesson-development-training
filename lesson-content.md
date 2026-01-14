@@ -1,6 +1,6 @@
 ---
 title: Adding Lesson Content
-teaching: 15
+teaching: 25
 exercises: 40
 start: yes
 ---
@@ -19,6 +19,7 @@ format objectives, questions, keypoints, exercises and their solutions in a less
 
 - How do you create and modify the pages in a lesson?
 - How should different structural elements be presented in a lesson website?
+- How can you include quality control in the editing process on GitHub?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -70,21 +71,88 @@ as a bullet list in the `index.md` file of your lesson repository.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Below those, let's add the prerequisite skills you determined earlier for your lesson. 
-While you can add them as a bullet point list, the Workbench provides a special formatted block 
-for prerequisites, so they appear visually distinct on the page.
+
+## Proposing Changes with Pull Requests
+
+:::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Decide Whether to Teach This Section
+We have found that trainees bring a wide range of experience with GitHub to this training.
+Before teaching the pull request workflow, it is worth checking how familiar trainees already are with this way of working.
+
+If all trainees are already comfortable with opening pull requests to suggest changes to a repository, you can save time by skipping this section altogether.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+So far, we have been editing the files in our lesson repository directly.
+This is a quick way of working and pretty safe for simple and small changes, especially when your whole lesson team is present (like in this training).
+But it has a number of drawbacks:
+
+1. There is not much opportunity for quality control: if you make typos or other mistakes, those will be directly published in your lesson as soon as the site finishes building.
+2. There is little room for discussion of potential changes.
+3. Only one person can work on a given file at the same time without risking the introduction of conflicting changes.
+
+GitHub offers a workflow for making changes that can be very powerful for collaborative teams, especially those whose members often work on the project asynchronously: pull requests.
+A pull request is a way of proposing changes to one or more files in a project so that they can be reviewed, discussed, and adjusted before they are included in the main version (in our case, the lesson website).
+It can be helpful to think of pull requests like the "Suggest changes" feature of collaborative writing platforms like GoogleDocs.
+
+Pull requests work through a feature of the Git version control software called _branches_.
+A project can have multiple branches, which each represent a particular state of the project as a whole.
+We briefly encountered branches when we were configuring our lesson repository in the previous episode: when we make changes to the `main` branch of the project, the files in that branch are processed by the lesson build workflows and deposited as webpage source code into the `gh-pages` branch, which is then served to the internet.
+
+When you want to make some more changes to the project, you can create a new branch to contain those changes before opening a pull request to propose the inclusion of your changes into the `main` version of the project.
+The pull request interface then allows your fellow team members to explore and comment on the changes you propose, and decide whether/when to include them.
+
+### Opening a pull request
+Let's make another change to the `index.md`, adding the bullet point list of prerequisites, this time via a pull request.
+
+```markdown
+- prerequisite 1
+- prerequisite 2
+- [etc...]
+```
+
+When commiting these changes to the `index.md`, we can choose the "Create a new branch for this commit and start a pull request" option.
+It can be helpful to choose a descriptive name for the branch.
+
+* After pressing "Propose changes", you will be prompted to open a pull request.
+* Choose a title for your pull request, e.g. "Add prerequisites to index.md" and write a short description of the changes you are proposing.
+* After pressing "Create pull request", your proposed changes will be presented to your other team members (and anybody else who visits the project).
+
+Team members who have been granted access to the repository as collaborators will be able to do several things with this pull request:
+
+1. Review and comment on the proposed changes, via the "Files changed" tab of the pull request.
+2. Discuss the pull request in the "Conversation" tab.
+3. _Merge_ i.e. accept the changes into the `main` branch of the project to be built into the content of the lesson website.
+
+:::::::::::::::::::::::::::::::::::: instructor
+
+### Reviewing the Pull Request
+Ask your co-Trainer to briefly demonstrate the process of reviewing and merging this pull request.
+Since a more in-depth discussion of pull request reviews is included in the GitHub Skill-up, the demonstration here can be limited to viewing the changes in the "Files changed" tab, writing an approving message, and merging the changes.
+
+:::::::::::::::::::::::::::::::::::::::::::::::
+
+Once the changes have been merged and your lesson site rebuilds, check how prerequisites block appears on your lesson's home page. 
+A screenshot below provides an example.
+
+![A rendered lesson prerequisite fenced div](fig/prereq-fenced-div.png){
+alt="Lesson prerequisite fenced div structural block as rendered in a Web page by the Workbench"
+}
+
+You will have an opportunity to practice this pull request workflow in a moment.
+
+We just added the prequisites as a bullet point list in `index.md`, but the Workbench provides a special formatted block for lesson prerequisites, so they appear visually distinct on the page.
+Specially formatted blocks of content like this are added to our lesson as _fenced divs_.
 
 ::: callout 
 
 ### Fenced divs
 
-Fenced divs are structural elements within the page, which get rendered in a visually distinct 
-way on the lesson website.
-Fenced divs include regular Markdown content surrounded by special tags to mark 
-the start and the end of such a block. 
+Fenced divs are structural elements within the page, which get rendered in a visually distinct way on the lesson website.
+Fenced divs include regular Markdown content surrounded by special tags to mark the start and the end of such a block. 
 
-To mark the beginning of a fenced div, start a line with an opening tag - at least 3 colon characters 
-followed by a blank character and a keyword denoting the type of a fenced div you are 
-creating (`::: fenced_div_keyword`) . 
+To mark the beginning of a fenced div, start a line with an opening tag - at least 3 colon characters followed by a blank character and a keyword denoting the type of a fenced div you are creating (`::: fenced_div_keyword`). 
 Then you add the Markdown content of this structural block. 
 Finally, end your fenced div with a closing tag consisting of at least 3 colons (`:::`).
 
@@ -92,22 +160,23 @@ Finally, end your fenced div with a closing tag consisting of at least 3 colons 
 and we will explore most of them in this episode.
 :::
 
-To add a "prerequisite" block to `index.md`, we use a fenced div called `prereq` like this:
+:::::::::::::::::::::::::::::::::::::::: challenge
+
+### Practice with Pull Requests (10 mins)
+Edit `index.md`, following the steps demonstrated earlier to open a pull request, to put the list of prerequisites into a fenced div with the `prereq` class:
 
 ```markdown
-::: prereq
+::::::::::::::::::::::::::::::::: prereq
+
 - prerequisite 1
 - prerequisite 2
-- ...
-:::
+- [etc...]
+
+::::::::::::::::::::::::::::::::::::::::
+
 ```
 
-Once your page builds, check how prerequisites block appears on your lesson website. 
-A screenshot below provides an example.
-
-![A rendered lesson prerequisite fenced div](fig/prereq-fenced-div.png){
-alt="Lesson prerequisite fenced div structural block as rendered in a Web page by the Workbench"
-}
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::: spoiler
 
@@ -162,10 +231,13 @@ and copy its contents to make it easier to structure the new episode we are crea
 
 ::: instructor
 
-You may ask each trainee in a lesson team to create an episode file for
-the episode they are responsible for.
-Be careful here to ensure that participants who are collaborating on the same repository
-do not create conflicts e.g. by editing the same file or creating files with identical names.
+You may ask each trainee in a lesson team to create an episode file for the episode they are responsible for.
+Encourage participants to use pull requests here, to ensure that they do not create conflicts e.g. by editing the same file or creating files with identical names.
+Or ask them to observe only and not to follow along while you demonstrate this the first time: they will have an opportunity to practice the steps for themselves in an upcoming exercise.
+
+It may feel awkward to open separate pull requests for the creation of an episode file and the addition of that episode to the lesson navigation, but the cognitive load of teaching how to include changes to mutiple files in the same branch from within the GitHub web interface may be too great.
+Use your judgement of participants' familiarity and comfort with GitHub when deciding how to present this and how much detail to go into.
+Remember that a separate GitHub Skill-up exists to teach them a more efficient way of using the platform to work collaboratively.
 
 :::
 
@@ -214,7 +286,7 @@ You may have noticed a few more fenced divs in the episode file - `questions`, `
 These are all compulsory elements of every episode - the Workbench will refuse to build your
 lesson if any of these are missing.
 
-Now create a new file in the `episodes` folder.
+Now open a new pull request to create a new file in the `episodes` folder.
 Based on the episodes you planned out earlier,
 choose a name for your episode that concisely describes the intended content,
 e.g. `data-visualisation.md`
@@ -234,7 +306,7 @@ For the content of your episode, paste everything from the `introduction.md` fil
 
 ### Adding a new episode to the lesson navigation
 
-This new episode will not yet appear in the navigation of your lesson site.
+This new episode will not yet appear in the navigation of your lesson site, even after the pull request has been merged.
 To enable this, we need to specify where the episode should appear
 in the order of the lesson.
 That episode order is defined in the `episodes` field of the `config.yaml` file:
@@ -247,7 +319,7 @@ episodes:
 ```
 
 Add the name of the new episode file you created to this list in `config.yaml`
-and commit this change, for example:
+and open a new pull request to commit this change, for example:
 
 ```yaml
 # Order of episodes in your lesson
@@ -257,7 +329,7 @@ episodes:
 
 ```
 
-After the lesson site has been rebuilt on GitHub,
+After the pull request has been merged and the lesson site has been rebuilt on GitHub,
 you should see the episode title appear under _EPISODES_
 in the left sidebar navigation of your lesson site
 after refreshing the webpage.
@@ -277,15 +349,32 @@ alt="A rendered lesson episode page showing objectives, questions and keypoints 
 
 ## Exercise: practice creating episodes (10 minutes)
 
-Repeat the steps you just saw, to create another new episode file
-and add it to the lesson site navigation.
-If you know what another episode in your lesson will be about,
-create the page for that.
+Repeat the steps you just saw, to create another new episode file and add it to the lesson site navigation.
+Propose these changes as pull requests when you do so.
+If you know what another episode in your lesson will be about, create the page for that.
 Otherwise, feel free to use any values you like for the file name and episode title.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Using this approach, we can build up our lesson one episode at a time.
+
+
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+
+### Working on the same episode or file - possible conflicts
+
+As we move onto adding more content into trainees' lesson repositories, it is quite possible that two or more trainees will be working on the same episode. 
+This could lead to conflicts if they are editing the same portion of the episode simultaneously. 
+
+Embrace this if it happens in the training! 
+It is a good opportunity to mention to trainees that this is a common scenario when working collaboratively and to guide them through steps that need to be taken to resolve conflicts.
+
+Now may also be a good opportunity to mention that, instead of editing files on the main branch, it is better when collaborators work on separate development branches. 
+This enables them to work in parallel without constantly resolving conflicts and having to deal with them in the middle of ongoing work. 
+While using branches does not eliminate conflicts entirely, it delays them until collaborators are ready to integrate their changes into the main branch.
+This is done via pull requests (PRs) - which will be covered later in this episode.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ## Adding Exercises
@@ -352,9 +441,21 @@ format the exercise you designed previously as an exercise in your lesson site.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## Optional and Important Material
+## Important, Optional and Cautionary Material
 
-The Carpentries Workbench includes fenced divs for highlighting key material that should not be skipped during instruction (with the `callout` keyword), as well as optional content that can be covered if time permits (`spoiler` keyword).
+The Carpentries Workbench includes a fenced div for highlighting key material that should not be 
+skipped during instruction using the `callout` keyword.
+
+:::::::::: callout
+
+## Calling Attention to Important Points
+
+For important points in the lesson, you can add them to a `callout` box to emphasize their importance.
+
+:::::::::::::
+
+
+There is also a fenced div for optional content that can be covered if time permits (`spoiler` keyword).
 
 ::::::::::::::::::::::::::::::::::::::::  spoiler
 
@@ -369,27 +470,20 @@ These spoilers should still be kept to a minimum as they can be disruptive to in
 Note, this use of the spoiler box is to use the expandable box functionality as nothing will be "spoiled" by expanding this box.
 Also, note that the spoiler box titles should be very clear so instructors need not expand the spoiler to know if they want to teach that extra.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:::::::::: callout
+You may notice that many of the older lessons use callouts for both additional material and to highlight important points interchangeably. Spoilers were developed in 2023 to help with separating these two different use cases.
 
-## Calling Attention to Important Points
+Finally, the Workbench also supports the `caution` fenced dev, which can be used to draw attention 
+to common pitfalls, potential issues or otherwise emphasise something that might negatively impact the user.
 
-For important points in the lesson, you can add them to a `callout` box to emphasize their importance.
+::::::::::::::::::::::::::::::::::::::::  caution
 
-::::: spoiler
+### Calling Attention to Potential Problems
 
-### Inconsistent use of spoiler vs callout
+Be careful to close an opened fenced div with at least three colons (`:::`) to avoid failed lesson builds.
 
-You may notice that many of the older lessons use callouts for both additional material and to highlight important points interchangeably.  
-Spoilers were developed in 2023 to help with separating these two different use cases.
-
-:::::::::::::
-
-::::::::::::::::::
-
-The Workbench also supports a `caution` class of fenced dev, which can be used to draw attention to common pitfalls or otherwise emphasise something that learners should be careful about.
+::::::::::::::::::::::::::::::::::::::::
 
 ## Glossary of Terms 
 
@@ -474,18 +568,20 @@ find and fix the problem when you notice the build process fail.
   [instructions for installing the infrastructure](https://carpentries.github.io/sandpaper-docs/#setup)
   and [building a local preview of the lesson website](https://carpentries.github.io/sandpaper-docs/introduction.html#preview).
 
+### Keeping your infrastructure up to date
+New versions of the workflows that build your lesson site will be released occasionally, and the Workbench includes a maintenance workflow that can help you keep your infrastructre healthy. 
+If you are using R Markdown source files in your lesson, you will also need to update the package dependencies of your lesson and the Workbench provides a second maintenance workflow that can take care of that for you too.
+Both of these maintenance workflows will open pull requests on your lesson repository, which you will need to merge for the updates to be applied.
+If your lesson is hosted in The Carpentries Incubator, these workflows will be configured for you.
+If you are keeping your lesson repository somewhere else instead (e.g. with your personal GitHub account or an organisation of your own), you will need to take care of [a few configuration steps to allow these maintenance workflows to open pull requests on the project on your behalf](https://docs.carpentries.org/resources/curriculum/lesson-forks.html#configure-maintenance-workflows).
 
 [sandpaper-docs-learners]: https://carpentries.github.io/sandpaper-docs/editing.html#learners
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - The main pages of a lesson website (lesson episodes) are created from individual Markdown or R Markdown files in the `episodes` folder of a lesson repository
-- Objectives, questions, keypoints, exercises (and solutions), and other "special" structural 
-page elements (other than plain text) can be formatted using _fenced div_ blocks - they are rendered 
-visually differently in the lesson website. 
+- Objectives, questions, keypoints, exercises (and solutions), and other "special" structural page elements (other than plain text) can be formatted using _fenced div_ blocks - they are rendered visually differently in the lesson website. 
 - There are many types of [fenced divs](https://carpentries.github.io/sandpaper-docs/instructor/component-guide.html#callout-blocks) available to lesson developers.
+- Pull requests are a way of suggesting changes so that they can be reviewed and discussed by other team members before being included in the lesson website.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-[^1]: [Kirschner et al. 2006](learners/reference.md#litref)

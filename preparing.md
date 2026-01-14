@@ -195,49 +195,65 @@ You may find the ["Training Pilot Operations Guide"](https://doi.org/10.5281/zen
 
 :::::::::::::::::::::::::::::::::::::: 
 
+## Running your own pilot workshop
 
-::::::::::::::::::::::::::::::::::::::  challenge
+We recommend that you look for an opportunity to teach some or all of your new lesson as soon as possible.
+The feedback you collect and the experience you gain will help you improve on your lesson design and content.
 
-## Exercise: homework
+While it may feel early or scary to pilot part of your workshop early in the development process, the feedback you can get from learners is highly valuable and can focus or speed up your development process.
+The feedback below from workshop participants demonstrates the importance of trial runs.
 
-The final part of this training will focus on the skills needed to collaborate
-effectively. Before that there will be a break,
-during which we would like you to complete the following three tasks:
+::::::::::::::::: testimonial
 
-1. Teach one episode of your lesson (probably the one you have been working on in these two days).
-   See the [Lesson Trial Runs](../learners/trial-runs.md) page for full details.
-2. After your trial run has concluded
-   (immediately after, or when you have reviewed any feedback you collected from learners),
-   note down your answers to the following questions:
-   - What worked?
-   - What did not?
-   - What will you do differently next time?
-   - What will you change in your material you taught?
-     We will refer to these notes when we reconvene for the last episode of this training.
-3. Based on your experience teaching the material and the feedback you received from your learners and helpers,
-   make a list of issues you have identified with the material you prepared, e.g.:
-   - examples that did not work as expected,
-   - improvements that could be made to exercises,
-   - parts that learners found particularly challenging,
-   - unexpected questions or misconceptions that came up during the trial run.
+### Testing with a 'Real' Audience
 
-    We will return to these notes during the final training session,
-    so please make sure you save them somewhere you will be able to find them again easily when the time comes.
+Presenting our lesson in front of a ‘real’ audience as a trial run gave us valuable feedback on things we hadn't fully considered in the planning phase.
+It helped us to better understand how much time is needed for the exercises, how difficult the exercises are for the learners and how some examples used can be misunderstood by the learners.
+I think that learner feedback is more useful the more the audience closely matches your own target audience, so the insights are more practical and relevant for improving the content. 
 
+\- Julia Tolksdorf
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::
+
+::::::::: testimonial
+
+### Getting Feedback Early
+
+Doing a trial run of our lesson so early in the process felt a bit intimidating at first, it seemed like we weren’t ready and everything needed more work. But that’s exactly why the trial run was so helpful.
+It gave us a clear picture of what worked and what didn’t, like realizing we’d packed in way too much content and spotting some technical issues we hadn’t thought of before.
+The participants were understanding and gave us really useful feedback, which made the next version of the lesson so much better.
+It was a great reminder that progress matters more than perfection.
+
+\- Olga Minaeva
+
+::::::::::::::::::::
+
+### After the training
+
+Before obtaining certification as a Carpentries Lesson Developer, trainees are required to complete two "checkout" tasks:
+
+1. Teach one or more episodes of your lesson to a real audience.
+2. Join a _Pilot Workshop Debrief_ session, reporting on your experience teaching your new lesson and your plans for the next iteration of the content and design.
+
+See the [Checkout Process](../learners/checkout.md) page for full of these steps.
+
+![
+To complete their Carpentries Lesson Developer certification, participants in this training must attend a Pilot Workshop Debrief session and report on the experience of trialling some of their new lesson content.
+Participation in a separate GitHub Skill-up teaching skills and approaches for effective collaboration is optional but recommended for Lesson Developers.
+](../episodes/fig/cldt-checkout.svg){
+alt="A graphical representation of the schedule and checkout process for collaborative lesson development training."
+width="67%"}
+
+Some feedback from participants that demonstrates the importance of piloting a lesson.
 
 
 :::::::::::::::::::::::::::::::::::::  discussion
 
 ## What questions do you have? (15 minutes)
 
-The homework from this workshop includes a trial run of one of the episodes
-you have been developing in your lesson, to a real audience.
+The checkout process for Lesson Developer certification includes a pilot event of at least one of the episodes you have been developing in your lesson, to a real audience.
 
-After reading [the information provided about the trial run task](../learners/trial-runs.md) and thinking about this task,
-what questions do you have about how you should
-approach teaching that trial run?
+After reading [the information provided about the checkout tasks](../learners/checkout.md) and thinking about the lesson pilot, what questions do you have about how you should approach teaching it?
 Is there anything you are unsure of?
 What resources might help you prepare for that experience?
 
@@ -253,7 +269,7 @@ What resources might help you prepare for that experience?
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 [it-minute-cards]: https://carpentries.github.io/instructor-training/06-feedback.html#minute-cards
-[minute-card-template]: https://docs.google.com/forms/d/1p7iOV5HNvy4POS4g6eottY8RSfKq4kaoKz1-jIFYTMI/template/preview
+[minute-card-template]: https://docs.google.com/forms/d/1rsGrY-COjGt-paQQjmTyr7Ic4iw7aNYQkBcMLHrQU0k/template/preview?pli=1
 [ssi]: https://www.software.ac.uk/
 [universe-hpc]: http://www.universe-hpc.ac.uk/
 

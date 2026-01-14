@@ -1,4 +1,4 @@
-[blooms]: https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/
+[blooms]: https://en.wikipedia.org/wiki/Bloom%27s_taxonomy
 [carpentries-incubator]: https://carpentries-incubator.org/
 [incubator-proposals]: https://github.com/carpentries-incubator/proposals
 [carpentries-lab]: https://carpentries-lab.org/
@@ -21,9 +21,11 @@
 [kirschner-2006]: https://github.com/carpentries/instructor-training/blob/gh-pages/files/papers/kirschner-minimal-guidance-fails-2006.pdf
 [lc]: https://librarycarpentry.org/
 [lessondev-handbook]: https://docs.carpentries.org/handbooks/lesson_developers.html
+[handbook-narrative-example-data]: https://docs.carpentries.org/resources/curriculum/narrative-example-data.html
 [pilot-notes-template]: https://codimd.carpentries.org/lesson-pilot-observation-notes-template#
 [swc]: https://software-carpentry.org/
 [swc-lessons]: https://software-carpentry.org/lessons/
-[trick-question]: https://cdm16884.contentdm.oclc.org/digital/collection/p16884coll42/id/147
+[trick-question]: https://www.ksde.org/Portals/0/CSAS/CSAS%20Home/CTE%20Home/TrickQuestion.pdf?ver=2022-02-23-104343-727
+[trick-quesiton-ref]: https://cdm16884.contentdm.oclc.org/digital/collection/p16884coll42/id/147
 [ttt-exercises]: https://teachtogether.tech/en/index.html#s:exercises
 [workbench]: https://carpentries.github.io/workbench/
