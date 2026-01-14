@@ -8,7 +8,7 @@ exercises: 50
 
 After completing this episode, participants should be able to...
 
-- Explain the importance of defining specific, measurable, attainable, relevant and time-bound (SMART) objectives for a lesson.
+- Explain the importance of defining specific, measurable, attainable, relevant and time-bound objectives for a lesson.
 - Evaluate a written lesson objective according to these criteria.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -68,19 +68,10 @@ such as woodwork,
 playing a musical instrument,
 or making sushi,
 are probably better suited to a different platform than a static website.)
-
 Cognitive skills cannot be equally easily acquired:
 before we can *apply* concepts and *create* something new, we must attain the ability to *remember*
 and *distinguish* between new concepts.
-Remembering and distinguishing are also abilities that are often faster to gain than applying or creating.
-
-This is what [Bloom's Taxonomy][blooms] (depicted in diagram below) tells us as well - it arranges cognitive skills (and educational objectives) into a hierarchy where cognitive skills on higher levels cannot be obtained before gaining those on lower levels.
-Even though Bloom's Taxonomy has been disputed by some educational psychologists and has been revised since the original proposal - it still provides a useful framework to help us define learning objectives (as we will see shortly).
-
-![Bloom's taxonomy - a framework for categorising educational goals, [image from Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bloom%27s_revised_taxonomy.svg) reused under CC BY 4.0 license](https://upload.wikimedia.org/wikipedia/commons/6/6a/Bloom%27s_revised_taxonomy.svg){
-alt="Bloom's taxonomy - a framework for categorising educational (cognitive) goals - represented as a pyramid with six levels of increasing cognitive complexity from the bottom to the top: remembering, understanding, applying, analysing, evaluating and creating"
-width="67%"
-}
+Remembering and distinguishing are also abilities that are often faster to gain then applying or creating.
 
 We must try to be realistic about how far along this scale we can move learners during a single workshop/lesson.
 This is one reason why the target audience is so important:
@@ -92,19 +83,48 @@ rest of our time on developing content that is necessary for learners to reach t
 It will help us ensure we do not miss anything important or, conversely,
 include anything superfluous that could use up valuable time or distract instructors and learners.
 
-### What Does a Learning Objective Look Like?
 
-The following highlights the most important elements of a learning objective:
+## What Does an Objective Look Like?
 
-![The most important elements of a learning objective.](fig/objective.svg){alt='An example
+![This diagram highlights the most important elements of a learning objective.](fig/objective.svg){alt='An example
 learning objective, "import data into an indexed DataFrame with read_csv", with emphasis placed on the action verb
 ("import") and the specificity ("indexed") of the objective.'}
 
-Learning objectives should be read as if they were endings to the following sentence:
+Objectives can be defined for a lesson as a whole -
+what should learners be able to do at the end of a workshop teaching this lesson? -
+and for individual sections within it -
+what should learners be able to do after following this particular part of the lesson?
+
+::: spoiler
+
+## Do you think the objective in the image above is a lesson- or episode-level objective?
+
+This is probably a episode-level objective because it is very specific.
+A corresponding lesson-level objective might be "read data and libaries into the python environment".
+It is still fairly specific but a bit broader in scope and contains several episode-level objectives.
+
+:::::::::::
+
+The **lesson** level objective for the current section of this training is:
+**define SMART learning objectives**.
+This objective also covers a later episode as well.
+
+The **episode** level objectives for the current section of this training are:
+
+::::::::: checklist
+
+## Objectives for This Section
+
+- Explain the importance of defining specific, measurable, attainable, relevant and time-bound objectives for a lesson.
+- Evaluate a written lesson objective according to these criteria.
+
+::::::::::::::::::::
+
+These should be read as if they were endings to a sentence beginning
 
 > "At the end of this session, learners should be able to ..."
 
-Each objective should start with a verb and describe one (and only one) skill the learner will obtain.
+Each objective starts with a verb and describes one (and only one) skill the learner will obtain.
 
 For objectives to be as helpful as possible,
 they need to be written in a way that will allow us to directly observe whether
@@ -114,45 +134,23 @@ as a general rule, action verbs such as "explain," "choose," or "predict,"
 are more helpful than passive verbs such as "know," "understand," or "appreciate",
 which are hard to directly assess and are often open to interpretation.
 
-Refer back to Bloom's Taxonomy - this time focusing on the right-hand side of the diagram showing the measurable actions used to help us describe knowledge, skills and abilities. 
-It serves as a very useful bank of *action verbs* for use in learning objectives.
-The Committee for Computing Education in Community Colleges has also created a [version of Bloom's Taxonomy customized for computing-related training][computeBloom] with an extended list of action verbs.
+A popular aid for defining learning objectives is [Bloom's Taxonomy][blooms],
+which divides cognitive skills into several categories.
+The original taxonomy arranged these categories in a strict hierarchy,
+which has since been disputed.
+Regardless of whether these skills conform to such a hierarchy,
+Bloom's Taxonomy serves as a very useful bank of action verbs for use
+in learning objectives.
+The Committee for Computing Education in Community Colleges has also created a [version of Bloom's Taxonomy customized for computing related training][computeBloom].
 
 We will see how helpful it can be to use action verbs in learning objectives
 when we begin talking about exercise design in the coming episodes.
-
-### Lesson-Level vs. Episode-Level Objectives
-
-Objectives can be defined for a lesson as a whole - answering the question "what should learners be able to do at the end of a workshop teaching this lesson?".
-
-Objectives can also be defined for individual sections within it - answering the question "what should learners be able to do after following this particular part of the lesson?".
-
-::: spoiler
-
-## Do you think the objective in the image above is a lesson- or episode-level objective?
-
-This is probably a episode-level objective because it is very specific.
-A corresponding lesson-level objective might be "read data and libraries into the Python environment".
-It is still fairly specific but a bit broader in scope and contains several episode-level objectives.
-
-:::::::::::
-
-The **lesson-level** objective for the current section of this training is:
-
-> define SMART learning objectives.
-
-This objective also covers a later episode as well.
-
-The **episode-level** objectives for the current section of this training are:
-
-> - Explain the importance of defining specific, measurable, attainable, relevant and time-bound objectives (SMART) for a lesson.
-> - Evaluate a written lesson objective according to these criteria.
 
 
 ## SMART Objectives
 
 To assist you in defining and writing learning objectives for your lesson,
-it can be helpful to turn to another popular framework for defining goals and objectives: _SMART_.
+it can be helpful to turn to a popular framework for defining goals: _SMART_.
 Originally [proposed to aid managers in the definition of business goals](https://community.mis.temple.edu/mis0855002fall2015/files/2015/10/S.M.A.R.T-Way-Management-Review.pdf),
 and updated and adapted since to [several other domains](https://en.wikipedia.org/wiki/SMART_criteria#Common_usage) including education 
 (see [_How to Write Well-Defined Learning Objectives_](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5944406/) for example[^1]),
@@ -165,13 +163,13 @@ and _time-bound_.
 
 In the context of a lesson, SMART objectives should be:
 
-- **S**pecific: they should clearly describe a particular skill or ability the learner should gain.
-- **M**easurable: it should be possible to observe and ascertain when the learner has developed the skill described in the objective.
-- **A**ttainable: the learner should realistically be able to acquire the skill in the time available in a workshop or by following the text of the lesson.
+- **S**pecific: they should clearly describe a particular skill or ability the learner should have.
+- **M**easurable: it should be possible to observe and ascertain when the learner has learned the skill/abilities described in the objectives.
+- **A**ttainable: the learner should realistically be able to acquire the skills or abilities in the time available in a workshop/by following the text of the lesson.
 - **R**elevant: they should be relevant to the overall topic or domain of the lesson as a whole.
 - **T**ime-bound: they should include some timeframe within which the goal will be reached. For learning objectives, this is built into the approach described above.
 
-Note that, for any lesson that will be taught in a fixed amount of time,
+Note that, for any lesson/curriculum that will be taught in a fixed amount of time,
 _attainable_ and _time-bound_ are overlapping:
 learning objectives for your lesson will answer the question
 "What will learners be able to do by the end of this lesson?"
@@ -258,14 +256,14 @@ what the main points will be,
 in what order they will be introduced,
 how much detail can be provided,
 and how much time can be spent on each point.
-Especially when writing lessons for short format training like a Carpentries workshop,
+Especially when writing lessons for short form training like a Carpentries workshop,
 difficult decisions often need to be made about what can and cannot be included.
 Trying to fit too much content into a lesson is counter-productive[^2],
 so it is good to avoid the temptation to cram in more content than you
 have time to cover properly.
 
 Writing learning objectives is a good opportunity to begin thinking about
-lesson scope,
+this lesson scope,
 and can provide assistance when you are faced with a difficult decision
 about what content to cut out.
 
@@ -287,12 +285,12 @@ because the task can be considered in the context of taking out whole
 learning objectives.
 
 
-## Defining Your Learning Objectives
+## Defining Learning Objectives
 
 We have discussed the importance of defining objectives early in
 the lesson design process,
 and looked at some examples of objectives written for other lessons.
-Now it is time to begin defining objectives for your own lesson.
+Now it is time to begin defining objectives for your own.
 
 Here are some recommendations to help you get started:
 
@@ -323,15 +321,6 @@ try to think of a slightly broader objective that may contain several very speci
 We will come back and work more on episode objectives next in the training.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-### Pushed for time?
-The exercise below can be skipped if needed to make up some time.
-If the Trainer does choose skip the exercise, they should share the link to the Lesson Objective Advisor tool for trainees to try out in their own time.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 
 ::::::::::::::::::::::::::::::::::::::  challenge
 
@@ -366,15 +355,6 @@ It will help people understand whether or not the event is a good fit for them,
 and manage their expectations about what they will learn if they attend.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-### Homework/Pre-reading
-If you are ending day 1 of the training here, this would be a great time to remind trainees that they should have reviewed the content of the [_Choosing a Narrative and Dataset for a Lesson_](https://docs.carpentries.org/resources/curriculum/narrative-example-data.html) in the community handbook. 
-Trainees will need to apply the guidance on that page to the first exercise in the next episode.
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
