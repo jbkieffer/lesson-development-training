@@ -26,7 +26,7 @@ After completing this episode, participants should be able to...
 Given the limited time in a short-format training,
 it is vital to define the scope of the lesson, i.e.
 what people need to know before and what they will know after the lesson.
-Thinking carefully about the target audience will help you with this and
+Thinking carefully about the target audience will help you with this and with
 defining desired learning outcomes (the first step of the lesson design).
 Prominently displaying a description of the target audience
 will also help attract people with the right motivation and
@@ -35,10 +35,10 @@ relevant prior knowledge to attend your workshops.
 ### Expertise
 
 One of the most important things we can identify about our target audience
-is the level of expertise they will already have in relation to the skills taught by your lesson.
+is the level of expertise they will already have in relation to the skills taught in your lesson.
 In The Carpentries Instructor Training curriculum,
 we describe
-[three different stages of skill acquisition: novice, competent practitioner, and expert][it-skill-acquisition] and how it directly correlates to the complexity of [mental models][it-mental-models] these different groups have about a domain/topic.
+[three different stages of skill acquisition: novice, competent practitioner, and expert][it-skill-acquisition] and how these stages directly correlate to the complexity of [mental models][it-mental-models] these different groups have about a domain/topic.
 
 Briefly, the novice is someone who does not know what they do not know, i.e., they do not yet know what the key ideas in the domain are or how they relate, the competent practitioner has enough understanding of the domain/topic for everyday purposes, and the expert is someone who can easily handle situations that are out of the ordinary and can immediately use their prior knowledge or skills when presented with a new problem in the domain.
 
@@ -55,7 +55,7 @@ the level of expertise that you expect learners to arrive with for two reasons:
    giving you some idea of what _misconceptions_ they might arrive with.
    It is vital that misconceptions are identified and corrected early on,
    before learners try to incorporate new knowledge into a broken mental model.
-   (More on this in [_Stay On Target_](episodes/formative-assessment.md).)
+   (More on this in [Designing Exercises ](episodes/formative-assessment.md).)
 2. People at different stages of this process need to be taught differently.
    For example, novices will learn more from lessons that include worked examples
    and are more tutorial-like i.e. focused on a specific task,
@@ -99,14 +99,6 @@ Most of all, it will help you stay connected to the fact that
 _you are not your learners_:
 they will arrive at the lesson with different priorities,
 interests, and challenges than your own.
-
-
-### Lesson Design Notes Document
-
-At this point, the Trainers will share [the template for a Lesson Design Notes document][design-notes-template] with trainees.
-Trainees should make a copy of this document and fill in their lesson title.
-You will populate other parts of the document with the notes and information they produce throughout the training.
-
 
 ::::::::::::::::::::::::::::::::::::::  challenge
 
